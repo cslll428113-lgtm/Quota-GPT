@@ -1,6 +1,13 @@
 # Quota · GPT 额度悬浮窗
 
-Windows 10/11 x64 桌面工具，当前基线版本为 **0.6.1**。
+Windows 10/11 x64 桌面工具，当前版本为 **0.6.1**。
+
+## 下载使用
+**[点击下载 Windows 完整程序包](https://github.com/cslll428113-lgtm/Quota-GPT/releases/download/v0.6.1/Quota-v0.6.1-Windows.zip)** · [所有版本](https://github.com/cslll428113-lgtm/Quota-GPT/releases)
+
+无需登录 GitHub。下载后全部解压，双击 `Quota.exe`，保留同目录的 `engine` 文件夹。请下载上述完整包；GitHub 自动附带的 Source code ZIP 只有源码。
+
+此包已通过 GitHub Windows 环境编译和文件完整性检查，实机交互仍待验证。
 
 ## 功能
 - 浏览器完成账号授权，后台每 60 秒查询 Work / Codex 额度。
@@ -25,7 +32,7 @@ source 内为 C# / WPF 源码，需要 Windows 和 .NET 8 SDK。
 source/direct-build 保存了早期受限构建环境使用的后备代码，常规构建不启用 DIRECT_BUILD。
 
 ## 后续更新方式
-以此仓库为源码基线，每次修改提交一个有说明的版本；更新 CHANGELOG.md 和项目版本号，在 Windows 上验证后，将完整包上传至 GitHub Releases。保留旧版便于回退。
+以此仓库为源码基线，每次修改提交一个有说明的版本；更新 CHANGELOG.md 和项目版本号，在 Windows 上验证后，从 Actions → Publish Windows package → Run workflow 触发构建发布。流程会下载固定版本官方引擎、校验 SHA256、编译并检查完整包，再发布至 Releases；已存在的版本不会覆盖，保留旧版便于回退。
 GitHub 保存代码和版本记录；当前客户端没有自动下载或安装更新功能。后续可在聊天中要求继续修改并同步该仓库。
 
 ## 账号与隐私
