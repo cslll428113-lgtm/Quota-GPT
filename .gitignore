@@ -1,0 +1,13 @@
+**/bin/
+**/obj/
+dist/
+engine/
+*.exe
+*.dll
+*.pdb
+*.zip
+*.log
+.env*
+auth.json
+.codex/
+.vs/
