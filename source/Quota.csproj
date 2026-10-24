@@ -6,5 +6,5 @@
 <Version>0.6.1</Version><ApplicationIcon>app.ico</ApplicationIcon><RuntimeIdentifier>win-x64</RuntimeIdentifier>
 <SelfContained>true</SelfContained><PublishSingleFile>true</PublishSingleFile><IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
 <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile><DebugType>embedded</DebugType>
-</PropertyGroup><ItemGroup><EmbeddedResource Include="app.ico" /></ItemGroup>
+</PropertyGroup><ItemGroup><EmbeddedResource Include="app.ico" /><Page Remove="direct-build/**/*.xaml" /><Compile Remove="direct-build/**/*.cs" /></ItemGroup>
 </Project>
